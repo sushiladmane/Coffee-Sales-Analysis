@@ -42,4 +42,5 @@ Cash Sales = SUM(Sales[cash_type])
 
 Card Sales = SUM(Sales[card_money])# Coffee-Sales-Analysis
 
----
+
+
