@@ -23,3 +23,24 @@ The dashboard helps analyze sales performance, customer payment behavior, and be
 - Domain-specific coffee theme design
 
 ---
+
+## 🧾 Dataset Columns
+- `date`
+- `datetime`
+- `cash_type`
+- `card_money`
+- `coffee_type`
+
+## 🧮 DAX Measures Used
+
+```DAX
+Total Sales = SUM(Sales[cash_type]) + SUM(Sales[card_money])
+
+Total Orders = COUNTROWS(Sales)
+
+Cash Sales = SUM(Sales[cash_type])
+
+Card Sales = SUM(Sales[card_money])# Coffee-Sales-Analysis
+
+## Dashboard
+<img width="1161" height="659" alt="Screenshot 2025-12-14 225103" src="https://github.com/user-attachments/assets/636fbeb4-42a2-4387-b05b-2572e1fa427e" />
